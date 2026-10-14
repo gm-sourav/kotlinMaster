@@ -3,12 +3,12 @@ fun printHello(name:String) {
 }
 
 fun sum(a:Int, b:Int) : Int {
-    var sumt = a + b
-    return sumt
+   return a+b
 }
 
 fun main() {
     printHello("Sourov")
     printHello("John")
-    println(sum(2,3))
+    val result = sum(2,3)
+    println("The result is $result")
 }
