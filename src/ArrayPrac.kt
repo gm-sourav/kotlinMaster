@@ -1,10 +1,18 @@
 fun main() {
-    var students = arrayOf(1,2,3,4,5,6,7,8,9,10)
-    var sum = 0
 
-    for (i in students){
-        sum = sum + i
+    println("Enter array size - ")
+    val n = readln().toInt()
+
+    val arr = IntArray(n)
+
+    println("Enter elements - ")
+    for (i in 0 until n) {
+        arr[i] = readln().toInt()
     }
 
-    println(sum)
+    println("The elements are")
+
+    for (x in arr) {
+        print(" $x")
+    }
 }
